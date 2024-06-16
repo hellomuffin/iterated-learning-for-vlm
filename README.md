@@ -69,11 +69,12 @@ bash run.sh example/clip/train_solver.py \
 ## :paperclip: Cite
 If you find this repository useful, please consider citing:
 ```bibtex
-@inproceedings{hsieh2023sugarcrepe,
-  title={SugarCrepe: Fixing Hackable Benchmarks for Vision-Language Compositionality},
-  author={Hsieh, Cheng-Yu and Zhang, Jieyu and Ma, Zixian and Kembhavi, Aniruddha and Krishna, Ranjay},
-  booktitle={Thirty-Seventh Conference on Neural Information Processing Systems Datasets and Benchmarks Track},
-  year={2023}
+@inproceedings{zheng2024iterated,
+  title={Iterated learning improves compositionality in large vision-language models},
+  author={Zheng, Chenhao and Zhang, Jieyu and Kembhavi, Aniruddha and Krishna, Ranjay},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={13785--13795},
+  year={2024}
 }
 ```
 
