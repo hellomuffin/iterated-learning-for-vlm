@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="iterated learning improves compositionality in large vision-language models">
+  <meta property="og:title" content="iterated learning improves compositionality in large vision-language models">
+  <meta property="og:description" content="iterated learning improves compositionality in large vision-language models">
+  <meta property="twitter:title" content="iterated learning improves compositionality in large vision-language models">
+  <meta property="twitter:description" content="iterated learning improves compositionality in large vision-language models">
+  <meta property="og:type" content="website">
+  <meta name="keywords" content="vision-language models, LLM, compositionality, iterated learning, cultural transmission">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IL-CLIP</title>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-D65ZW4CJYF"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'G-D65ZW4CJYF');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+  <script src="./static/js/jquery-3.6.4.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/lazy.js"></script>
+  <script src="./static/js/faster.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-2 publication-title">Iterated Learning Improves Compositionality in Large Vision-Language Models</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://hellomuffin.github.io/">Chenhao Zheng</a><sup>1,2</sup>, </span>
+            <span class="author-block">
+              <a href="https://jieyuz2.github.io/">Jieyu Zhang</a><sup>1</sup>, </span>
+            <span class="author-block">
+              <a href="https://anikem.github.io/">Aniruddha Kembhavi</a><sup>1,3</sup>, </span>
+            <span class="author-block">
+              <a href="https://ranjaykrishna.com/index.html">Ranjay Krishna</a><sup>1,3</sup>, </span> 
+            <span class="author-block">
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>University of Washington &nbsp; </span>
+            <span class="author-block"><sup>2</sup>University of Michigan &nbsp; </span>
+            <span class="author-block"><sup>3</sup>Allen Institute of Artificial Intelligence</span>
+
+          </div>
+          <h1 style="font-size:24px">CVPR 2024</h1>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://arxiv.org/pdf/2404.02145"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <!-- Video Link. -->
+              <span class="link-block">
+                <a href="https://www.youtube.com/watch?v=8UiJNqC14js"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/hellomuffin/fdt-code"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+    .video-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); /* Three columns */
+        grid-template-rows: repeat(1, 1fr); /* Two rows */
+        gap: 0px 4px; /* Gap between videos */
+        width: 70%; /* Set the container width to 80% */
+        margin: 0 auto; /* Center the container horizontally */
+    }
+
+    .video-grid video {
+        width: 100%; /* Videos fill the container width */
+        height: auto;
+    }
+</style>
+
+<section>
+
+
+  <div class="video-grid">
+      <div>
+        <img src="static/images/overview.png" class="interpolation-image" alt="Interpolate start reference image." />
+      </div>
+  </div>
+  <div class="columns is-centered has-text-centered">
+    <p style="margin-top: 10px; text-align: center;">
+    We design an iterated learning algorithm that improves the compositionality in large vision-language models, inspired by cultural transmission theory in cognitive science.
+  </div>
+</section>
+
+<br>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            A fundamental characteristic common to both human
+            vision and natural language is their compositional nature.
+            Yet, despite the performance gains contributed by large vision and language pretraining, recent investigations find
+            that most—if not all—our state-of-the-art vision-language
+            models struggle at compositionality. They are unable to distinguish between images of “a girl in white facing a man in
+            black” and “a girl in black facing a man in white”. Moreover, prior work suggests that compositionality doesn't arise
+            with scale: larger model sizes or training data don't help.
+            This paper develops a new iterated training algorithm that incentivizes compositionality. We draw on decades of cognitive
+            science research that identifies cultural transmission—the
+            need to teach a new generation—as a necessary inductive
+            prior that incentivizes humans to develop compositional languages. Specifically, we reframe vision-language contrastive
+            learning as the Lewis Signaling Game between a vision agent
+            and a language agent, and operationalize cultural transmission by iteratively resetting one of the agent's weights
+            during training. After every iteration, this training paradigm
+            induces representations that become “easier to learn”, a
+            property of compositional languages: e.g. our model trained
+            on CC3M and CC12M improves standard CLIP by 4.7%,
+            4.0% respectfully in the SugarCrepe benchmark.
+          </p>
+        </div>
+      </div>
+    </div>
+    <br>
+    <!-- Paper video. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Video</h2>
+        <div class="publication-video">
+          <a id="overview_video"></a>
+          <iframe
+            src="https://www.youtube.com/embed/8UiJNqC14js">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!--/ Paper video. -->
+</section>
+
+<br>
+
+<style>
+    .video-grid-two-cols {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Two columns */
+        gap: 10px; /* Gap between videos */
+        width: 60%; /* Set the container width to 60% */
+        margin: 0 auto; /* Center the container horizontally */
+    }
+
+    .video-grid-two-cols video {
+        width: 100%; /* Videos fill the container width */
+        height: auto;
+    }
+</style>
+
+
+<section>
+    <div class="columns is-centered has-text-centered">
+      <h2 class="title is-3">Why Iterated Learning works?</h2>
+       <a id="interactive_demo"></a>
+    </div>
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <div class="content has-text-justified">
+            <p> Why our iterated learning algorithm works? We demonstrate it from both cognitive science point of view and machine learning point of view. 
+            </p>
+
+            <p>
+              From cognitive science point of view, we demonstrate that iterated learning produces "easy-to-learn" visual representation.  we train language encoders from scratch to align with the fixed visual encoder checkpoints (lets the vision agent be a teacher to teach language agent).  The language agents achieved significantly higher matching speed when paired with vision representations developed through iterated learning.
+            </p>
+
+            <p>
+              From a machine learning perspective, we find that iterated learning implicitly performs smoothness regularization.  As shown in the figure, the estimated upper bound of Lipschitz constant decreases as generation increases in iterated learning setting and is much smaller than the model trained with the standard scheme. 
+            </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="hero">
+  <div class="hero-body">
+    <div class="">
+      <div class="columns is-centered">
+        <div class="column is-four-fifths">
+          <div class="columns is-centered" style="position: relative;">
+            <div class="column is-two-thirds image-board">
+              <img style="width: 100%;" class="clickable-image" src="static/images/cognitive_science.png" alt="Image">
+                <div id="clear-btn" class="button centered"> Plot of in-batch image-text matching accuracy for visual agents "teaches" new language agents
+                </div>
+   
+            </div>
+            <div class="column is-one-thirds image-board move">
+            <img style="width: 100%;" class="clickable-image" src="static/images/machine_learning.png" alt="Image">
+              <div id="clear-btn" class="button centered"> Estimated upper bound of Lipschitz constant</div>
+          </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<br>
+<br>
+<br>
+
+
+<section>
+  <div class="columns is-centered has-text-centered">
+    <h2 class="title is-3"> Codebook Interpretability</h2>
+  </div>
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <div class="content has-text-justified">
+              <p>We visualize the learned codebook by retrieving the top 5 most relevant images for each code. We find that the codes correspond to different (somewhat) interpretable semantic concepts. After mapping the codes manually, we reverse the process and interpret which codes are selected when viewing a new image.  For example, both the “horse” and “tent” codes are assigned a higher weight when viewing an image that contains both, indicating the model’s compositional understanding.  </p>
+        </div>
+      </div>
+  </div>
+</div>
+  <br>
+  <div class="video-grid">
+    <div>
+      <img src="static/images/codebook.png" class="interpolation-image" alt="Interpolate start reference image." />
+    </div>
+  </div>
+</section>
+
+<br>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title is-3">BibTeX</h2>
+    <pre><code>
+@inproceedings{zheng2024iterated,
+  title={Iterated learning improves compositionality in large vision-language models},
+  author={Zheng, Chenhao and Zhang, Jieyu and Kembhavi, Aniruddha and Krishna, Ranjay},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={13785--13795},
+  year={2024}
+}
+</code></pre>
+  </div>
+</section>
+
+
+
+<footer class="footer">
+  <div align="center" class="container">
+    <div class="columns is-centered">
+        <div class="content">
+            This website is borrowed from <a href="https://github.com/nerfies/nerfies.github.io">nerfies</a>.
+        </div>
+      </div>
+    </div>
+</footer>
+
+
+</body>
+</html>

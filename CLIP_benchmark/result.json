@@ -1,1 +1,0 @@
-{"dataset": "sugar_crepe/add_att", "model": "coca_ViT-B-32", "pretrained": "../logs/pure_caption_wo_parallel/checkpoints/epoch_15.pt", "task": "image_caption_selection", "metrics": {"acc": 0.5765895843505859}, "language": "en"}
