@@ -78,4 +78,9 @@ If you find this repository useful, please consider citing:
 ```
 
 ## :open_book: Acknowledge
+Part of our code is referenced from the following repositories/sources. We thank the authors for making their code available.
+* https://github.com/yuxiaochen1103/FDT
+* https://github.com/LAION-AI/CLIP_benchmark
+* https://github.com/RAIVNLab/sugar-crepe
+* https://github.com/RAIVNLab/crepe
 
