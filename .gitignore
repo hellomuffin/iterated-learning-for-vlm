@@ -1,0 +1,13 @@
+.idea
+.DS_Store
+output*/
+slurm_out/
+wandb/
+checkpoints/
+*.pyc
+text_info/
+data/
+*.txt
+*.sh
+qualitative_examples/
+results/
