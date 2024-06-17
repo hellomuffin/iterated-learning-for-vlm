@@ -1,7 +1,7 @@
 # [CVPR 2024] Iterated Learning Improves Compositionality in Large Vision-Language Models
 
 
-This is the implemntation of the paper  [Iterated Learning Improves Compositionality in Large Vision-Language Models](https://arxiv.org/abs/2404.02145).
+This is the implementation of the paper  [Iterated Learning Improves Compositionality in Large Vision-Language Models](https://arxiv.org/abs/2404.02145).
 
 We design an iterated learning algorithm that improves the compositionality in large vision-language models, inspired by cultural transmission theory in cognitive science.
 ![](images/overview.png)
