@@ -8,6 +8,5 @@ checkpoints/
 text_info/
 data/
 *.txt
-*.sh
 qualitative_examples/
 results/
