@@ -35,7 +35,7 @@ bash test.sh <model-type> <checkpoint-path> <task>
 
 Note that we use [clip-benchmark](https://github.com/LAION-AI/CLIP_benchmark) for evaluating recognition and retrieval. It will automatically download the required datasets in `data` folder.
 
-The pretrained model checkpoints can be found [here]()
+The pretrained model checkpoints can be found [here](https://drive.google.com/file/d/1Nyp9Q8FCs3Vf-PEij42xu8NEVjdFsMaY/view?usp=sharing)
 
 #### Training CLIP model using iterated learning
 
