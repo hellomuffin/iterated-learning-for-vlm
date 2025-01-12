@@ -6,7 +6,6 @@ wandb/
 checkpoints/
 *.pyc
 text_info/
-data/
 *.txt
 qualitative_examples/
 results/
